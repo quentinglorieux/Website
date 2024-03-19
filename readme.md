@@ -1,4 +1,4 @@
-# Site QISS 2024
+# Les Houches Predoc School on Cold Atoms: Quantum Gases and Quantum Fluids of Light
 
 ## Edit the template
 

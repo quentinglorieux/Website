@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+</head>
+<body>
+
+    <h2>User Information Form</h2>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="d3b1ed37-3d41-408c-bb1b-baa39f5789f6">
+        <label for="email">Your name: <input type="text" name="name" required></label>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <button type="submit">Submit Form</button>
+    </form>
+    
+
+    <script>
+        const userForm = document.getElementById('userForm');
+
+        userForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(userForm);
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+
+            // You can now submit this formObject using the fetch API to your serverless function.
+            // For example, using the code provided in the previous responses.
+            // Inside the form submission success block
+           
+
+            // console.log('Form data:', formObject, response);
+        });
+    </script>
+
+</body>
+</html>

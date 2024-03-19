@@ -1,0 +1,67 @@
+<h2 class="">{{ .titles.contact }}</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ducimus neque amet corrupti ex temporibus similique.</p>
+<form id="userForm">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" required>
+
+  <br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" required>
+
+  <br>
+
+  <button type="submit">Submit</button>
+</form>
+
+<!-- <script src="https://apis.google.com/js/api.js"></script> -->
+
+<script>
+// submitForm.js
+document.getElementById('userForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+
+    const formData = { firstName, lastName };
+
+    submitToGoogleSheets(formData);
+});
+
+function submitToGoogleSheets(formData) {
+    gapi.client.sheets.spreadsheets.values.append({
+        spreadsheetId: '1l0Igwt-MJUnPoLKlKv8Fp8utDQKy8zacPWD8f_O87jc',
+        range: 'Sheet1', // Update to your sheet name
+        valueInputOption: 'RAW',
+        insertDataOption: 'INSERT_ROWS',
+        resource: {
+            values: [[formData.firstName, formData.lastName]],
+        },
+    }).then((response) => {
+        console.log('Sheet updated successfully:', response);
+    }, (error) => {
+        console.error('Error updating sheet:', error);
+    });
+}
+
+function initClient() {
+    // Load the Google API client library
+    gapi.load('client', () => {
+        gapi.client.init({
+            clientId: '690465903607-27qlihca98dnvl7a3nnjo6643i7sab69.apps.googleusercontent.com',
+            discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+            scope: 'https://www.googleapis.com/auth/spreadsheets',
+        }).then(() => {
+            // Sign in the user if they are not already signed in.
+            return gapi.auth2.getAuthInstance().signIn();
+        }).then(() => {
+            console.log('Google API client initialized');
+        });
+    });
+}
+// Load the Google API client library
+gapi.load('client', initClient);
+
+</script>

@@ -1,0 +1,122 @@
+<div>
+    <h2 class="section-title">{{ .titles.program }}</h2>
+</div>
+
+{{ range $name :=  site.Data.schedule  }}
+ {{$name.name}}
+{{ end}}
+
+  
+  <div class="xschedule" aria-labelledby="schedule-heading">
+    
+    <span class="track-slot" aria-hidden="true" style="grid-column: track-1; grid-row: tracks;">Monday</span>
+    <span class="track-slot" aria-hidden="true" style="grid-column: track-2; grid-row: tracks;">Tuesday</span>
+    <span class="track-slot" aria-hidden="true" style="grid-column: track-3; grid-row: tracks;">Wednesday</span>
+    <span class="track-slot" aria-hidden="true" style="grid-column: track-4; grid-row: tracks;">Thursday</span>
+    <span class="track-slot" aria-hidden="true" style="grid-column: track-5; grid-row: tracks;">Friday</span>
+    
+    <h2 class="xtime-slot" style="grid-row: time-1;">8:00am</h2>
+  
+    <div class="xsession session-1 track-1" style="grid-column: track-1; grid-row: time-1 / time-2;">
+      <h3 class="xsession-title"><a href="#">Talk Title</a></h3>
+      <span class="xsession-time">8:00 - 9:00</span>
+      <span class="xsession-track">Track: 1</span>
+      <span class="xsession-presenter">Presenter</span>
+    </div>
+    
+    <div class="xsession session-2 track-2" style="grid-column: track-2; grid-row: time-1 / time-2;">
+      <h3 class="xsession-title"><a href="#">Talk Title</a></h3>
+      <span class="xsession-time">8:00 - 8:30</span>
+      <span class="xsession-track">Track: 2</span>
+      <span class="xsession-presenter">Presenter</span>
+    </div>  
+    
+    <div class="xsession session-3 track-3" style="grid-column: track-3; grid-row: time-1 / time-3;">
+      <h3 class="xsession-title"><a href="#">Talk Title</a></h3>
+      <span class="xsession-time">8:00 - 8:30</span>
+      <span class="xsession-track">Track: 3</span>
+      <span class="xsession-presenter">Presenter</span>
+    </div>
+    
+    <div class="xsession session-4 track-4" style="grid-column: track-4; grid-row: time-1 / time-2;">
+      <h3 class="xsession-title"><a href="#">Talk Title</a></h3>
+      <span class="xsession-time">8:00 - 10:00</span>
+      <span class="xsession-track">Track: 4</span>
+      <span class="xsession-presenter">Presenter</span>
+    </div>
+
+    <div class="xsession session-4 track-4" style="grid-column: track-5; grid-row: time-1 / time-2;">
+        <h3 class="xsession-title"><a href="#">Talk Title</a></h3>
+        <span class="xsession-time">8:00 - 10:00</span>
+        <span class="xsession-track">Track: 5</span>
+        <span class="xsession-presenter">Presenter</span>
+      </div>
+    
+    <h2 class="xtime-slot" style="grid-row: time-2;">8:30am</h2>
+    
+    <div class="xsession session-5 track-3" style="grid-column: track-1; grid-row: time-2 / time-4;">
+      <h3 class="xsession-title"><a href="#">Talk Title</a></h3>
+      <span class="xsession-time">8:30 - 10:00</span>
+      <span class="xsession-track">Track: 1</span>
+      <span class="xsession-presenter">Presenter</span>
+    </div>
+    
+    <h2 class="xtime-slot" style="grid-row: time-3;">9:00am</h2>
+    
+    <div class="xsession session-6 track-1" style="grid-column: track-2; grid-row: time-2 / time-3;">
+      <h3 class="xsession-title"><a href="#">Talk Title</a></h3>
+      <span class="xsession-time">9:00 - 10:00</span>
+      <span class="xsession-track">Track: 2</span>
+      <span class="xsession-presenter">Presenter</span>
+    </div>
+    
+    
+    <!-- <div class="xsession session-7 track-all" style="grid-column: track-1-start / track-4-end; grid-row: time-2 / time-3;">
+      <h3 class="xsession-title">Take a break!</h3>
+    </div> -->
+    
+    
+    <div class="xsession session-8 track-1" style="grid-column: track-1; grid-row: time-4 / time-5;">
+      <h3 class="xsession-title"><a href="#">Talk Title</a></h3>
+      <span class="xsession-time">10:30 - 11:30</span>
+      <span class="xsession-track">Track: 1</span>
+      <span class="xsession-presenter">Presenter</span>
+    </div>
+    
+    <div class="xsession session-9 track-2" style="grid-column: track-2; grid-row: time-3 / time-4;">
+      <h3 class="xsession-title"><a href="#">Talk Title</a></h3>
+      <span class="xsession-time">10:30 - 11:00</span>
+      <span class="xsession-track">Track: 2 </span>
+      <span class="xsession-presenter">Presenter</span>
+    </div>
+    
+    <div class="xsession session-10 track-4" style="grid-column: track-4; grid-row: time-2 / time-3;">
+      <h3 class="xsession-title"><a href="#">Talk Title</a></h3>
+      <span class="xsession-time">10:30 - 11:00</span>
+      <span class="xsession-track">Track: 4</span>
+      <span class="xsession-presenter">Presenter</span>
+    </div>
+
+    <div class="xsession session-10 track-4" style="grid-column: track-5; grid-row: time-2 / time-3;">
+        <h3 class="xsession-title"><a href="#">Talk Title</a></h3>
+        <span class="xsession-time">10:30 - 11:00</span>
+        <span class="xsession-track">Track: 5</span>
+        <span class="xsession-presenter">Presenter</span>
+      </div>
+    
+    
+  </div>
+  
+
+  
+
+<style> 
+
+.section-title{
+    background-image: url('../img/spacer.jpg');
+    background-size: cover;
+    color: #FFF;
+    padding: 120px 40px 20px 40px;
+    margin: 0;
+    margin-bottom: 40px;}
+</style>

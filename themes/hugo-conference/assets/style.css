@@ -912,3 +912,11 @@ html{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
+
+
+#home {background-image: url('../img/bg3.jpg');
+  background-color: #2b2b2b;
+  background-repeat: no-repeat;
+  /* background-position: center bottom; */
+  background-size: cover;
+  min-height: 800px;}

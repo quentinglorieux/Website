@@ -28,10 +28,10 @@
   bio: "Tba"
   lab: "Weizmann Institute"
 
-- name: "Thomson"
-  photo: "/img/Thomson.jpg"
-  bio: "Tba"
-  lab: "Tba"
+# - name: "Thomson"
+#   photo: "/img/Thomson.jpg"
+#   bio: "Tba"
+#   lab: "Tba"
 
 - name: "Sylvain Ravets"
   photo: "/img/Ravets.jpg"

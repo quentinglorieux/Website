@@ -330,6 +330,15 @@ p {
   position: relative;
   top: -1px;
 }
+.photo-sp {
+  /* max-width: 100%; */
+  position: relative;
+  top: -1px;
+  /* width: 170px;  */
+  height: 80px; 
+  object-fit:cover; /* Resizes the image to fit the container while maintaining aspect ratio */
+  object-position: center; 
+}
 /* =============================================================================
    NAVIGATION
    ========================================================================== */
@@ -425,9 +434,12 @@ nav {
   top: 12px;
   left: 0;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 60px; 
+  height: 100px; 
+  object-fit: fill; /* Resizes the image to fit the container while maintaining aspect ratio */
+  object-position: center; /* Centers the image within the container */
 }
+
 .speech-title {
   font-size: 1.3em;
   margin-bottom: 1em;

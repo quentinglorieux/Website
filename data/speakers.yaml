@@ -1,7 +1,82 @@
-- name: "Speaker 1"
-  photo: "/img/speaker.jpg"
+- name: "Mikhail Baranov"
+  photo: "/img/Baranov.jpg"
   bio: "Tba"
-  lab: "X"
+  lab: "IQOQI Innsbruck"
+
+- name: "Jean-Philippe Brantut"
+  photo: "/img/Brantut.jpg"
+  bio: "Tba"
+  lab: "EPFL"
+
+- name: "Iacopo Carusotto"
+  photo: "/img/Carusotto.png"
+  bio: "Tba"
+  lab: "INO-CNR Trento"
+
+- name: "Francesca Ferlaino"
+  photo: "/img/Ferlaino.jpg"
+  bio: "Tba"
+  lab: "IQOQI Innsbruck"
+
+- name: "Thierry Giamarchi"
+  photo: "/img/Giamarchi.jpg"
+  bio: "Tba"
+  lab: "Université de Genève"
+
+- name: "Ofer Firstenberg"
+  photo: "/img/Firstenberg.jpg"
+  bio: "Tba"
+  lab: "Weizmann Institute"
+
+- name: "Thomson"
+  photo: "/img/Thomson.jpg"
+  bio: "Tba"
+  lab: "Tba"
+
+- name: "Sylvain Ravets"
+  photo: "/img/Ravets.jpg"
+  bio: "Tba"
+  lab: "C2N Palaiseau"
+
+- name: "Monika Aidelsburger"
+  photo: "/img/Aidelsburger.jpg"
+  bio: "Tba"
+  lab: "MPQ Munich"
+
+- name: "Nicolas Cherroret"
+  photo: "/img/Cherroret.jpg"
+  bio: "Tba"
+  lab: "LKB Paris"
+
+- name: "Thomas Pohl"
+  photo: "/img/Pohl.jpg"
+  bio: "Tba"
+  lab: "Vienna University of Technology"
+
+- name: "Jon Simon"
+  photo: "/img/Simon.jpg"
+  bio: "Tba"
+  lab: "Stanford University"
+
+- name: "Peter Lodhal"
+  photo: "/img/Lodhal.jpg"
+  bio: "Tba"
+  lab: "Niels Bohr Institute, University of Copenhagen"
+
+- name: "Giulia Semeghini"
+  photo: "/img/Semeghini.jpg"
+  bio: "Tba"
+  lab: "Harvard University"
+
+- name: "Anna Minguzzi"
+  photo: "/img/Minguzzi.jpg"
+  bio: "Tba"
+  lab: "LPMMC CNRS Grenoble"
+
+- name: "Pascale Sennelart"
+  photo: "/img/Sennelart.jpg"
+  bio: "Tba"
+  lab: "C2N Palaiseau"
 
 
 

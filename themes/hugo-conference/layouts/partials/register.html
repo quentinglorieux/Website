@@ -1,5 +1,4 @@
 <h2 class="section-title">{{ .titles.register }}</h2>
-<!-- <form class="w-full max-w-lg" method="post" name="contact" netlify> -->
 <div class="p-8 rounded-lg border border-gray-200 bg-white">
   <h1 class="font-medium text-3xl text-center">
     Registration to the {{ site.Params.Name }}.
@@ -9,7 +8,7 @@
   <p class="text-center">{{ site.Params.Fees }}</p>
   <p class="text-red-600 text-center">{{ site.Params.Registration }}</p>
 
-  <form class="form_q" name="registration" netlify>
+  <form class="form_q" name="registration" method="POST" data-netlify="true">
     <div class="mt-8 grid lg:grid-cols-2 gap-4">
       <div>
         <label

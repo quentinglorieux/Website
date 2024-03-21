@@ -12,5 +12,4 @@ Speakers infos are in data/speakers.yaml
 Other files should not be edited
 
 ## Run it locally
-```
-```
+hugo serve

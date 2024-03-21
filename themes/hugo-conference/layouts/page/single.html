@@ -26,22 +26,45 @@
 <body>
   <div class="global">
 
-    {{ partial "nav.html" . }}
-    {{ partial "header.html" .Site.Params }}
+    {{/*  {{ partial "nav.html" . }}  */}}
+    {{/*  {{ partial "header.html" .Site.Params }}  */}}
 
-    <div class="content" id="content">
+    <header class="header" id="homefull" name="LesHouches2">
+        <div class="wrapper">
+          <h1 class="logo-name">
+            <a class="logo-link" href="#" title="{{ .Site.Params.name }}" itemprop="name">Your registration has been recorded. </a>
+          </h1>
+          <h2 class="description">{{ .Site.Params.name }} <br> {{ .Site.Params.description }}</h2>
+          <h2 class="tagline"> Thank you !  </h2>
+      
+            <h4 class="description">We will announce selected applicants mid-July 2024. </h4>
+
+      
+            
+            <div class="call-action-area">
+             
+          
+                {{ with .Site.Params.calltoaction }}
+                  <a href="/" class="call-action-link mt-6"  title="Home">Back to the conference website</a>
+                {{ end }}
+              </div>
+
+        </div>
+      </header>
+      
+      <hr>
+
+      
+
+    {{/*  <div class="content" id="content">
       <div class="wrapper">
-        {{ range $section := .Site.Params.Sections }}
-          <section class="{{ $section }}" id="{{ $section }}">
-            {{ partial $section $.Site.Params }}
-          </section>
-        {{ end }}
+        
 
         <footer class="footer mt-24">
           <div class="text-slate-300">Made with ♥ by Quentin Glorieux. © {{ .Site.Title }} </div>
         </footer>
       </div>
-    </div>
+    </div>  */}}
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

@@ -8,7 +8,7 @@ theme : 'hugo-conference'
 params:
   # Conference info
   Name: "Les Houches Predoc School on Cold Atoms"
-  Description: "Quantum Gases and Quantum Fluids of Light"
+  Description: "QUANTUM SIMULATION with Quantum Gases and Fluids of Light"
   Date: "October 14, 2024 - October 25, 2024"
   Arrival: "October 14th after 3PM"
   Departure: "October 25th after Lunch"

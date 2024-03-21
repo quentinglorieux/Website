@@ -68,9 +68,12 @@ params:
 
   # List of Sponsors
   Sponsors:
-    - name: "QICS"
-      logo: "/img/logo.png"
-      url: "https://qics.sorbonne-universite.fr/"
+    - name: "GDR Quantum Gases"
+      logo: "/img/gdr_gq.png"
+      url: "https://gdr-gazquantiques.cnrs.fr/"
 
+    - name: "GDR Complex"
+      logo: "/img/gdr_complexe.jpg"
+      url: "https://gdrcomplexe2022.sciencesconf.org/"
 
 

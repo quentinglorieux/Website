@@ -330,6 +330,9 @@ p {
   position: relative;
   top: -1px;
 }
+.sponsor--link .photo{
+  display: inline;
+}
 .photo-sp {
   /* max-width: 100%; */
   position: relative;

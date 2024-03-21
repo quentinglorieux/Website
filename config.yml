@@ -38,6 +38,7 @@ params:
     - location
     - infos
     - register
+    - contact
    
     # - program
     # - schedule

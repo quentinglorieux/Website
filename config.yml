@@ -32,6 +32,7 @@ params:
   # you can also change order here and it will reflect on page
   Sections:
     - about
+    - topics
     - speakers
     - prog
     - sponsors
@@ -51,10 +52,11 @@ params:
   # Titles which you can translate to other languages
   Titles:
     about: "About"
+    topics: "Topics"
     location: "Location"
     speakers: "Speakers"
-    program: "Program"
-    prog: "Program"
+    program: "Tentative Program"
+    # prog: "Tentative Program"
     schedule: "Detailled schedule"
     sponsors: "Sponsors"
     register: "Registration"

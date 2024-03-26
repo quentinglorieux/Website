@@ -8,7 +8,8 @@ theme : 'hugo-conference'
 params:
   # Conference info
   Name: "Les Houches Predoc School on Cold Atoms"
-  Description: "QUANTUM SIMULATION with Quantum Gases and Fluids of Light"
+  Description: "QUANTUM SIMULATION with Quantum Gases and Fluids of Light."
+  Subtitle: "Ecole Atomes Froids du GDR Gaz Quantiques"
   Date: "October 14, 2024 - October 25, 2024"
   Arrival: "October 14th after 3PM"
   Departure: "October 25th after Lunch"
@@ -20,6 +21,7 @@ params:
   # GoogleMapsKey: "my-secret-maps-key"
   Intro: "Les Houches pre-doctoral school on 'Cold atoms: quantum gases and quantum fluids of light' offers an in-depth exploration of quantum phenomena within quantum fluids systems. The first week is devoted to background lectures on the general aspects of ultracold atomic physics and quantum fluids. The rest of the school will school will tackle various systems from ultra-cold atomic gases to superfluid helium, and photonic systems, and explore phenomena such as Bose-Einstein condensation, superfluidity, quantum vortices and quantum turbulence… This interdisciplinary school will allow to study modern aspects of quantum mechanics (theory and experiments) and its applications, with a focus on emerging technologies such as quantum simulation and precision measurement."
   Organizers: 
+    - Ecole "Atomes Froids" du GDR "Gaz Quantiques"
     - Antoine BROWAEYS, Laboratoire Charles Fabry, CNRS, Institut d’Optique
     - Quentin GLORIEUX, Laboratoire Kastler Brossel, CNRS, Sorbonne Université
     - Mathilde HUGBART, Institut de Physique de Nice, CNRS

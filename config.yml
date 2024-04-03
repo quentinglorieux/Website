@@ -73,7 +73,7 @@ params:
 
   # List of Sponsors
   Sponsors:
-   - name: "PASQuanS2"
+    - name: "PASQuanS2"
       logo: "/img/pasquans.jpg  "
       url: "https://pasquans2.eu/"
 

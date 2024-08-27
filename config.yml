@@ -40,7 +40,7 @@ params:
     - sponsors
     - location
     - infos
-    - register
+    # - register
     - contact
    
     # - program

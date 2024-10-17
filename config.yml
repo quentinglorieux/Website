@@ -56,7 +56,7 @@ params:
     topics: "Topics"
     location: "Location"
     speakers: "Speakers"
-    program: "Program"
+    schedule_partial: "Program"
     sponsors: "Sponsors"
     register: "Registration"
     infos : "Infos"

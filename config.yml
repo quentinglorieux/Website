@@ -35,7 +35,7 @@ params:
     - about
     - topics
     - speakers
-    - prog
+    - schedule_partial
     - sponsors
     - location
     - infos
@@ -56,9 +56,7 @@ params:
     topics: "Topics"
     location: "Location"
     speakers: "Speakers"
-    program: "Tentative Program"
-    # prog: "Tentative Program"
-    schedule: "Detailled schedule"
+    program: "Program"
     sponsors: "Sponsors"
     register: "Registration"
     infos : "Infos"

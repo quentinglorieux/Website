@@ -4,8 +4,8 @@
 
 
   <!-- Adding the iframe -->
-  <div class="">
-    <iframe width="1052px" height="1330px" frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQurIpqZabekPhzrJNQv67VRQy1KrP0RDyiMQCHo_KMxLv2OHbXDad33PNLVf3Rd5fsk_h2e5UDUmLN/pubhtml?gid=1874597869&amp;single=false&amp;widget=false&amp;headers=false"></iframe>
+  <div id="schedule-container"></div>
+    <iframe id="schedule-iframe" width="1052px" height="1330px" frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQurIpqZabekPhzrJNQv67VRQy1KrP0RDyiMQCHo_KMxLv2OHbXDad33PNLVf3Rd5fsk_h2e5UDUmLN/pubhtml?gid=1874597869&amp;single=false&amp;widget=false&amp;headers=false"></iframe>
   </div>
 
 
@@ -16,5 +16,17 @@
       if (footer) {
         footer.style.display = 'none';
       }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var iframe = document.getElementById('schedule-iframe');
+      var container = document.getElementById('schedule-container');
+
+      function resizeIframe() {
+        iframe.style.width = container.offsetWidth * 1.26 + 'px'; // Adjust the ratio as needed
+      }
+
+      window.addEventListener('resize', resizeIframe);
+      resizeIframe(); // Initial call to set the size
     });
   </script>

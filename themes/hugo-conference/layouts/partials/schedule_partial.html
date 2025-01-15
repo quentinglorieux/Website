@@ -3,10 +3,14 @@
 <h2 class="section-title">{{ .titles.program }}</h2>
 
 
-  <!-- Adding the iframe -->
-  <div id="schedule-container"></div>
-    <iframe id="schedule-iframe" width="1052px" height="1330px" frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQurIpqZabekPhzrJNQv67VRQy1KrP0RDyiMQCHo_KMxLv2OHbXDad33PNLVf3Rd5fsk_h2e5UDUmLN/pubhtml?gid=1874597869&amp;single=false&amp;widget=false&amp;headers=false"></iframe>
-  </div>
+<!-- Adding the iframe -->
+<div id="schedule-container">
+  {{ with site.Data.schedule.url }}
+    <iframe id="schedule-iframe" width="1052px" height="1330px" frameborder="0" src="{{ . }}"></iframe>
+  {{ else }}
+    <p>Schedule data is not available. Please check the configuration.</p>
+  {{ end }}
+</div>
 
 
   <script>

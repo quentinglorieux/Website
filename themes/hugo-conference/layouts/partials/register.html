@@ -8,7 +8,7 @@
   <p class="text-center">{{ site.Params.Fees }}</p>
   <p class="text-red-600 text-center">{{ site.Params.Registration }}</p>
 
-  <form class="form_q" name="registration" method="POST" data-netlify="true">
+  <form id="registration-form" class="form_q" name="registration" method="POST" data-netlify="true">
     <div class="mt-8 grid lg:grid-cols-2 gap-4">
       <div>
         <label
@@ -253,7 +253,7 @@
     <div class="space-x-4 mt-8">
       <button type="submit"
         class="py-4 px-4 bg-red-400 text-white shadow-xl rounded hover:bg-red-600 active:bg-red-700 disabled:opacity-50"
-        disabled
+        
       >
         Registration closed
       </button>
@@ -261,4 +261,49 @@
     </div>
   </form>
 </div>
+
+<script>
+  document.getElementById("registration-form").addEventListener("submit", async function (event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Collect form data
+    const formData = {
+      firstname: document.getElementById("firstname").value,
+      lastname: document.getElementById("lastname").value,
+      affiliation: document.getElementById("affiliation").value,
+      city: document.getElementById("city").value,
+      country: document.getElementById("country").value,
+      dob: document.getElementById("dob").value,
+      email: document.getElementById("email").value,
+      advisor: document.getElementById("advisor").value,
+      gender: document.querySelector('input[name="gender"]:checked')?.value,
+      status: document.querySelector('input[name="status"]:checked')?.value,
+      food: document.querySelector('input[name="food"]:checked')?.value,
+      other_food_details: document.getElementById("other").value,
+      title: document.getElementById("title").value,
+      abstract: document.getElementById("abstract").value,
+      shortCV: document.getElementById("shortCV").value,
+      motivation: document.getElementById("motivation").value,
+    };
+
+    try {
+      // Send data to SheetDB API
+      const response = await fetch("https://sheetdb.io/api/v1/ly243907ewpl4", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data: formData }),
+      });
+
+      if (response.ok) {
+        alert("Registration successful!");
+        document.getElementById("registration-form").reset(); // Clear the form
+      } else {
+        alert("Failed to submit registration. Please try again.");
+      }
+    } catch (error) {
+      alert("An error occurred while submitting the form. Please try again.");
+      console.error(error);
+    }
+  });
+</script>
 

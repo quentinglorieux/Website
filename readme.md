@@ -58,8 +58,8 @@ hugo serve
 - Create an account on Netlify and link it to your GitHub account.
 - Connect to Netlify and link your repository to it.
 - If needed: set the build command to `hugo` and the publish directory to `public/`
-
-
+![image](/themes/hugo-conference/assets/netlify.png)
+- Setup a custom domain if needed.
 
 # For Developpers
 
